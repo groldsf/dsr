@@ -1,3 +1,4 @@
+
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 
@@ -14,7 +15,8 @@ public class SystemManager {
 		String fullPath = mainPath+path;
 
 
-		File file = new File(fullPath);
+		//File file = new File(fullPath);
+		FileSystem file = new FileSystem
 		if(!file.exists() || !file.isDirectory()){
 			return null;
 		}
