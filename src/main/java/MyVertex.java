@@ -9,7 +9,7 @@ import io.vertx.core.json.JsonObject;
 public class MyVertex extends AbstractVerticle {
 
 	//private HttpServer server = vertx.createHttpServer();
-	private SystemManager smanager = new SystemManager();
+	private SystemManager smanager = new SystemManager(vertx);
 
 	@Override
 	public void start(Future<Void> fut){
@@ -32,14 +32,14 @@ public class MyVertex extends AbstractVerticle {
 					System.out.println(request.path());
 					System.out.println(request.params());
 					if(request.params().isEmpty()){
-						returnError(request);
+						ErrorResponse.returnError(request);
 						return;
 					}
 					JsonObject json = new JsonObject(request.params().toString());
 					//System.out.println(json);
 
 					if(!json.containsKey("type")){
-						returnError(request);
+						ErrorResponse.returnError(request);
 						return;
 					}
 					switch (json.getString("type")){
@@ -47,13 +47,13 @@ public class MyVertex extends AbstractVerticle {
 							auto(request,json);
 							break;
 						case "getPackage":
-							getPackage(request,json);
+							smanager.getPackage(request,json);
 							break;
 						case "getFile":
 							getFile(request,json);
 							break;
 							default:
-								returnError(request);
+								ErrorResponse.returnError(request);
 								break;
 					}
 
@@ -75,7 +75,7 @@ public class MyVertex extends AbstractVerticle {
 
 	private void getFile(HttpServerRequest request, JsonObject in) {
 		if(!in.containsKey("path"))
-			returnError(request);
+			ErrorResponse.returnError(request);
 
 		HttpServerResponse response = request.response();
 
@@ -87,24 +87,12 @@ public class MyVertex extends AbstractVerticle {
 		response.end("getFile type");
 	}
 
-	private void getPackage(HttpServerRequest request, JsonObject in) {
-		if(!in.containsKey("path"))
-			returnError(request);
 
-		JsonArray jsonArray = smanager.getPackage(in.getString("path"));
-		if(jsonArray == null)
-			returnError(request);
-		JsonObject out = new JsonObject();
-		out.put("status", true);
-		out.put("answer", jsonArray);
-
-		request.response().end(out.toString());
-	}
 
 	private void auto(HttpServerRequest request, JsonObject in) {
 
 		if(!in.containsKey("login") || !in.containsKey("password") )
-			returnError(request);
+			ErrorResponse.returnError(request);
 
 		JsonObject out = new JsonObject();
 		out.put("status",true);
@@ -114,10 +102,6 @@ public class MyVertex extends AbstractVerticle {
 	}
 
 
-	private void returnError(HttpServerRequest request) {
-		JsonObject json = new JsonObject();
-		json.put("status",false);
-		request.response().end(json.toString());
-	}
+
 
 }
