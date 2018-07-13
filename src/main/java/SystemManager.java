@@ -1,9 +1,11 @@
 import io.vertx.core.CompositeFuture;
 import io.vertx.core.Future;
 import io.vertx.core.Vertx;
+import io.vertx.core.file.OpenOptions;
 import io.vertx.core.http.HttpServerRequest;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
+import io.vertx.rxjava.core.file.AsyncFile;
 import io.vertx.rxjava.core.file.FileProps;
 import io.vertx.rxjava.core.file.FileSystem;
 
@@ -13,44 +15,23 @@ import java.util.List;
 
 public class SystemManager {
 
-	public String mainPath = "D:\\victor\\ideaTest\\WORK\\dsr\\dsr";
+	private String mainPath = "D:\\victor\\ideaTest\\WORK\\dsr\\dsr\\";
 	private Vertx vertx;
-
+	private FileSystem fileSystem;
 	public SystemManager(Vertx vertx) {
 		this.vertx = vertx;
-
+		fileSystem = new FileSystem(vertx
+				.fileSystem());
 	}
 
 	public void jsonPackage(String path, HttpServerRequest request) {
-		if(!isCorrect(path)){
-			return;
-		}
-		String fullPath = mainPath+path;
-
-		FileSystem file = new FileSystem(vertx.fileSystem());
-
-
-		//////////////////
-
-		file.exists(fullPath, existsResult -> {
-			//проверка на существование
-			if(existsResult.failed() || !existsResult.result()){
+		path = path.replace('/','\\');
+		String fullPath = mainPath + path;
+		fileSystem.readDir(fullPath, dir->{
+			if(dir.failed())
 				ErrorResponse.returnError(request);
-			}else{
-				file.lprops(fullPath, propsResult -> {
-					//проверка на директорию
-					if(propsResult.failed() || !propsResult.result().isDirectory()){
-						ErrorResponse.returnError(request);
-					}else{
-						file.readDir(fullPath, dir->{
-							if(dir.failed())
-								ErrorResponse.returnError(request);
-							else{
-								createJsonDirectory(dir.result(),request);
-							}
-						});
-					}
-				});
+			else{
+				createJsonDirectory(dir.result(),request);
 			}
 		});
 	}
@@ -58,33 +39,37 @@ public class SystemManager {
 	private void createJsonDirectory(List<String> dir, HttpServerRequest request) {
 
 		JsonArray array = new JsonArray();
-		FileSystem fileSystem = new FileSystem(vertx.fileSystem());
+		fileSystem = new FileSystem(vertx.fileSystem());
 		ArrayList<Future> list = new ArrayList<>();
 		for(String path : dir)
 		{
 			Future<FileProps> fut = Future.future();
 			list.add(fut);
-			fut.setHandler(res->{
-				if(res.succeeded()){
+			//fut.setHandler(
+			fileSystem.props(path, res->{
+				if(res.succeeded()) {
 					FileProps prop = res.result();
-
 					JsonObject file = new JsonObject();
 
-					file.put("type",prop.isDirectory()? "directory":"file");
-					file.put("creationTime",prop.creationTime());
-					file.put("size",prop.size());
-					file.put("lastModifiedTime",prop.lastModifiedTime());
+					file.put("type", prop.isDirectory() ? "directory" : "file");
+					file.put("name", path.substring(path.lastIndexOf("\\")+1));
+					file.put("fullDirectory", path.substring(mainPath.length()));
+					file.put("size", prop.size());
+					file.put("lastModifiedTime", prop.lastModifiedTime());
+					file.put("creationTime", prop.creationTime());
 					file.put("lastAccessTime", prop.lastAccessTime());
-					file.put("fullDirectory", path);
-					///////////// у vertx не нашёл, свой парсер мб работает дольше, протестить
-					file.put("name",new File(path).getName());
 					array.add(file);
+					fut.complete();
+				}else{
+					fut.fail("");
 				}
+
 			});
-			fileSystem.props(path,fut.completer());
+			//System.out.println();
 		}
 		CompositeFuture.all(list).setHandler(ar -> {
 			if (ar.succeeded()) {
+
 				JsonObject out = new JsonObject();
 				out.put("status", true);
 				out.put("answer", array);
@@ -104,10 +89,41 @@ public class SystemManager {
 	public void getPackage(HttpServerRequest request, JsonObject in) {
 		if(!in.containsKey("path"))
 			ErrorResponse.returnError(request);
-
-		jsonPackage(in.getString("path"),request);
+		else {
+			String path = in.getString("path");
+			if (!isCorrect(path))
+				ErrorResponse.returnError(request);
+			else
+				jsonPackage(path, request);
+		}
 	}
 
+	public  void getFile(HttpServerRequest request, JsonObject in){
+		if(!in.containsKey("path"))
+			ErrorResponse.returnError(request);
+		else {
+			String path = in.getString("path");
+			if (!isCorrect(path))
+				ErrorResponse.returnError(request);
+			else
+				jsonTxt(in.getString("path"), request);
+		}
+	}
 
+	private void jsonTxt(String path, HttpServerRequest request) {
+		String fullPath = mainPath+path;
+
+		fileSystem.readFile(fullPath, handler -> {
+			if (handler.succeeded()) {
+				JsonObject out = new JsonObject();
+				out.put("status", true);
+				out.put("text", handler.result().toString());
+				request.response().end(out.toString());
+
+			} else {
+				ErrorResponse.returnError(request);
+			}
+		});
+	}
 
 }

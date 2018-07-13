@@ -3,17 +3,17 @@ import io.vertx.core.Future;
 import io.vertx.core.http.HttpServer;
 import io.vertx.core.http.HttpServerRequest;
 import io.vertx.core.http.HttpServerResponse;
-import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 
 public class MyVertex extends AbstractVerticle {
 
 	//private HttpServer server = vertx.createHttpServer();
-	private SystemManager smanager = new SystemManager(vertx);
+	private SystemManager smanager;
 
 	@Override
 	public void start(Future<Void> fut){
 		HttpServer server = vertx.createHttpServer();
+		smanager = new SystemManager(vertx);
 		server
 				.requestHandler(request -> {
 
@@ -84,7 +84,8 @@ public class MyVertex extends AbstractVerticle {
 		JsonObject out = new JsonObject();
 		out.put("status",true);
 
-		response.end("getFile type");
+		//response.end("getFile type");
+		smanager.getFile(request, in);
 	}
 
 
