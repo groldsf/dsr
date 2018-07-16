@@ -27,7 +27,7 @@ public class MyVertex extends AbstractVerticle {
 
 					System.out.println(request.method());
 					//System.out.println(request.absoluteURI());
-					System.out.println(request.headers().names());
+					//System.out.println(request.headers().names());
 					//System.out.println(request.uri());
 					System.out.println(request.path());
 					System.out.println(request.params());
@@ -36,7 +36,7 @@ public class MyVertex extends AbstractVerticle {
 						return;
 					}
 					JsonObject json = new JsonObject(request.params().toString());
-					//System.out.println(json);
+					System.out.println(json);
 
 					if(!json.containsKey("type")){
 						ErrorResponse.returnError(request);

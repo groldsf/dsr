@@ -26,17 +26,23 @@ public class SystemManager {
 
 	public void jsonPackage(String path, HttpServerRequest request) {
 		path = path.replace('/','\\');
+		while(path.endsWith("\\")){
+			path = path.substring(0,path.length()-2);
+		}
+		String fatherPackage = path;
 		String fullPath = mainPath + path;
+
+
 		fileSystem.readDir(fullPath, dir->{
 			if(dir.failed())
 				ErrorResponse.returnError(request);
 			else{
-				createJsonDirectory(dir.result(),request);
+				createJsonDirectory(fatherPackage,dir.result(),request);
 			}
 		});
 	}
 
-	private void createJsonDirectory(List<String> dir, HttpServerRequest request) {
+	private void createJsonDirectory(String fatherPackage, List<String> dir, HttpServerRequest request) {
 
 		JsonArray array = new JsonArray();
 		fileSystem = new FileSystem(vertx.fileSystem());
@@ -51,7 +57,7 @@ public class SystemManager {
 					FileProps prop = res.result();
 					JsonObject file = new JsonObject();
 
-					file.put("type", prop.isDirectory() ? "directory" : "file");
+					file.put("type", prop.isDirectory() ? "package" : "file");
 					file.put("name", path.substring(path.lastIndexOf("\\")+1));
 					file.put("fullDirectory", path.substring(mainPath.length()));
 					file.put("size", prop.size());
@@ -70,9 +76,23 @@ public class SystemManager {
 		CompositeFuture.all(list).setHandler(ar -> {
 			if (ar.succeeded()) {
 
+
+
 				JsonObject out = new JsonObject();
 				out.put("status", true);
-				out.put("answer", array);
+				JsonObject ans = new JsonObject();
+				ans.put("array",array);
+				boolean isMainDir = fatherPackage.length() == 0;
+				ans.put("isMainDir", isMainDir);
+				if(!isMainDir) {
+					int ind = fatherPackage.lastIndexOf('\\');
+					if (ind != -1) {
+						ans.put("fatherDir", fatherPackage.substring(0, ind));
+					} else {
+						ans.put("fatherDir", "");
+					}
+				}
+				out.put("answer", ans);
 				request.response().end(out.toString());
 			} else {
 				ErrorResponse.returnError(request);
@@ -113,17 +133,24 @@ public class SystemManager {
 	private void jsonTxt(String path, HttpServerRequest request) {
 		String fullPath = mainPath+path;
 
-		fileSystem.readFile(fullPath, handler -> {
-			if (handler.succeeded()) {
-				JsonObject out = new JsonObject();
-				out.put("status", true);
-				out.put("text", handler.result().toString());
-				request.response().end(out.toString());
 
-			} else {
-				ErrorResponse.returnError(request);
-			}
-		});
+		//(path.endsWith(".txt")){
+			fileSystem.readFile(fullPath, handler -> {
+				if (handler.succeeded()) {
+					JsonObject out = new JsonObject();
+					out.put("status", true);
+					out.put("text", handler.result().toString());
+					request.response().end(out.toString());
+
+				} else {
+					ErrorResponse.returnBadFile(request);
+				}
+			});
+		/*}else{
+			ErrorResponse.returnBadFile(request);
+		}*/
+
+
 	}
 
 }

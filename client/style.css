@@ -1,0 +1,10 @@
+.ico {
+  width:32px;
+  height:32px;
+}
+.name{
+    width:32px;
+}
+.name, .ico{
+    display: inline;
+}
