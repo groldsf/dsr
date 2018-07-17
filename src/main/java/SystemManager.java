@@ -1,21 +1,23 @@
 import io.vertx.core.CompositeFuture;
 import io.vertx.core.Future;
 import io.vertx.core.Vertx;
-import io.vertx.core.file.OpenOptions;
+
 import io.vertx.core.http.HttpServerRequest;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
-import io.vertx.rxjava.core.file.AsyncFile;
+
 import io.vertx.rxjava.core.file.FileProps;
 import io.vertx.rxjava.core.file.FileSystem;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 public class SystemManager {
 
-	private String mainPath = "D:\\victor\\ideaTest\\WORK\\dsr\\dsr\\";
+	private String mainPath = "C:\\";//"D:\\victor\\ideaTest\\WORK\\dsr\\dsr\\";
+
+
+
 	private Vertx vertx;
 	private FileSystem fileSystem;
 	public SystemManager(Vertx vertx) {
@@ -135,17 +137,17 @@ public class SystemManager {
 
 
 		//(path.endsWith(".txt")){
-			fileSystem.readFile(fullPath, handler -> {
-				if (handler.succeeded()) {
-					JsonObject out = new JsonObject();
-					out.put("status", true);
-					out.put("text", handler.result().toString());
-					request.response().end(out.toString());
+		fileSystem.readFile(fullPath, handler -> {
+			if (handler.succeeded()) {
+				JsonObject out = new JsonObject();
+				out.put("status", true);
+				out.put("text", handler.result().toString());
+				request.response().end(out.toString());
 
-				} else {
-					ErrorResponse.returnBadFile(request);
-				}
-			});
+			} else {
+				ErrorResponse.returnBadFile(request);
+			}
+		});
 		/*}else{
 			ErrorResponse.returnBadFile(request);
 		}*/
