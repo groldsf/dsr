@@ -1,4 +1,4 @@
-var HOST = "http://localhost:8080/"
+var HOST = "http://localhost:8080/api/fs/"
 
 function getXhr(){
 	var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
@@ -28,7 +28,7 @@ function authorization(){
 	var str = JSON.stringify(event);
 
 
-	xhr.open("GET",HOST+"123?"+str,true);
+	xhr.open("GET",HOST+"?"+str,true);
 	xhr.addEventListener("load", function() {
 		document.getElementById("answer").innerHTML=xhr.responseText;
 	});
@@ -36,25 +36,21 @@ function authorization(){
 }
 
 function openPackage(uri){
-	document.getElementById("answer").innerHTML="openPackage";
+	document.getElementById("answer").innerHTML="openPackage...";
 
 	var xhr = getXhr();
 
-	var event = {
-		type : "getPackage",
-		path: uri
-	};
+
 	document.getElementById("textAddPath").innerHTML = uri;
 
-	var str = JSON.stringify(event);
 
-
-	xhr.open("GET",HOST+"?"+str,true);
+	xhr.open("GET", HOST + uri, true);
 	xhr.addEventListener("load", function() {
 	    //document.getElementById("answer").innerHTML = xhr.responseText;
         //console.log(xhr.responseText);
 		document.getElementById("answer").innerHTML = "";
 		document.getElementById("manager").innerHTML = "";
+		document.getElementById("textFile").style.display = "none";
 		var json = JSON.parse(xhr.responseText);
 		if(json.status){
 		   createPackage(json.answer);
@@ -67,28 +63,28 @@ function openPackage(uri){
 }
 
 function openFile(uri){
-	document.getElementById("answer").innerHTML="openFile";
+	document.getElementById("answer").innerHTML="openFile...";
 	var xhr = getXhr();
-
-	var event = {
-		type : "getFile",
-		path: uri
-	};
-
 	document.getElementById("textAddPath").innerHTML = uri;
 
-	var str = JSON.stringify(event);
-
-
-	xhr.open("GET",HOST+"123?"+str,true);
+	xhr.open("GET", HOST + uri, true);
 	xhr.addEventListener("load", function() {
-		document.getElementById("answer").innerHTML=xhr.responseText;
+        document.getElementById("answer").innerHTML = "";
+		//document.getElementById("manager").innerHTML = "";
+		document.getElementById("textFile").innerHTML = "";
+	    var json = JSON.parse(xhr.responseText);
+		if(json.status){
+		    document.getElementById("textFile").innerHTML = json.answer.text;
+		    document.getElementById("textFile").style.display = "block";
+		}else{
+		    document.getElementById("answer").innerHTML = json;
+		}
 	});
 	xhr.send();
 }
 
 function createPackage(answer){
-    console.log(answer);
+    //console.log(answer);
     if(answer.isMainDir){
     	//инвиз
     }else{
@@ -118,12 +114,3 @@ function createFileElem(obj){
 
         document.getElementById("manager").appendChild(newDiv);
 }
-
-
-
-
-
-
-
-
-
