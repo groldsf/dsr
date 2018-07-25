@@ -30,7 +30,7 @@ public class TestVertexRouter extends AbstractVerticle {
 
 		Route apiRoute = router.route(apiFs+"*");
 		apiRoute.method(HttpMethod.GET);
-		apiRoute.handler(new Listener(smanager, apiFs));
+		apiRoute.handler(new RouteHandler(smanager, apiFs));
 
 		server.requestHandler(router::accept).listen(8080,res -> {
 			if (res.succeeded()) {

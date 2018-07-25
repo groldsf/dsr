@@ -15,12 +15,12 @@ import java.net.URISyntaxException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 
-public class Listener implements Handler<RoutingContext> {
+public class RouteHandler implements Handler<RoutingContext> {
 
 	private InterfaceSystemManager smanager;
 	private String apiFs;
 
-	public Listener(InterfaceSystemManager smanager, String apiFs){
+	public RouteHandler(InterfaceSystemManager smanager, String apiFs){
 		this.smanager = smanager;
 		this.apiFs = apiFs;
 	}
