@@ -3,7 +3,7 @@ package dirElements;
 import io.vertx.core.file.FileProps;
 import io.vertx.core.json.JsonObject;
 
-public class MyFile implements dirElements.Jsonoble {
+public class File implements dirElements.Jsonoble {
 
 	private String type;
 	private String name;
@@ -13,7 +13,7 @@ public class MyFile implements dirElements.Jsonoble {
 	private long creationTime;
 	private long lastAccessTime;
 
-	public MyFile(FileProps props, String path){
+	public File(FileProps props, String path){
 		type = props.isDirectory()? "package" : "file";
 		name = path.substring(path.lastIndexOf("\\")+1);
 		this.path = path;

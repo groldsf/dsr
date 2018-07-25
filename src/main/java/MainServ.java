@@ -1,6 +1,4 @@
 import io.vertx.core.Vertx;
-import newServer.TestVertexRouter;
-
 import java.util.Scanner;
 
 public class MainServ {
@@ -10,8 +8,9 @@ public class MainServ {
 
 
 		Vertx vertx = Vertx.vertx();
-		//vertx.deployVerticle(new oldServer.MyVertex());
-		vertx.deployVerticle(new TestVertexRouter().setPathMainDir(MyTestSupport.getTestDir()));
+		String testDir = MyTestSupport.getTestDir();
+		System.out.println(testDir);
+		vertx.deployVerticle(new TestVertexRouter().setPathMainDir(testDir));
 
 		Scanner in = new Scanner(System.in);
 		in.next();

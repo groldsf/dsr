@@ -2,8 +2,8 @@ package systemManager;
 
 
 import dirElements.Jsonoble;
-import dirElements.MyFile;
-import dirElements.MyPackage;
+import dirElements.File;
+import dirElements.Package;
 import dirElements.TextFile;
 import io.vertx.core.AsyncResult;
 import io.vertx.core.CompositeFuture;
@@ -94,7 +94,7 @@ public class NewSystemManager implements InterfaceSystemManager {
 			}
 			createJsonDirectory(dir.result(), res ->{
 				if(res.succeeded()){
-					MyPackage answer = new MyPackage(res.result(), finalPath);
+					Package answer = new Package(res.result(), finalPath);
 					handler.handle(Future.succeededFuture(answer));
 				}else{
 					handler.handle(Future.failedFuture(res.cause()));
@@ -103,8 +103,8 @@ public class NewSystemManager implements InterfaceSystemManager {
 		});
 	}
 
-	private void createJsonDirectory(List<String> dir, Handler<AsyncResult<ArrayList<MyFile>>> handler) {
-		ArrayList<MyFile> array = new ArrayList<>();
+	private void createJsonDirectory(List<String> dir, Handler<AsyncResult<ArrayList<File>>> handler) {
+		ArrayList<File> array = new ArrayList<>();
 		ArrayList<Future> list = new ArrayList<>();
 		for(String path : dir)
 		{
@@ -113,7 +113,7 @@ public class NewSystemManager implements InterfaceSystemManager {
 			fileSystem.props(path, res->{
 				if(res.succeeded()) {
 					String localPath =  path.substring(mainPath.length());
-					array.add(new MyFile(res.result(),localPath));
+					array.add(new File(res.result(),localPath));
 					fut.complete();
 				}else{
 					fut.fail(res.cause());

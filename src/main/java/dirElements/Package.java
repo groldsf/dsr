@@ -5,14 +5,14 @@ import io.vertx.core.json.JsonObject;
 
 import java.util.ArrayList;
 
-public class MyPackage implements dirElements.Jsonoble {
+public class Package implements dirElements.Jsonoble {
 
-	private ArrayList<MyFile> array;
+	private ArrayList<File> array;
 	private boolean isMainDir;
 	private String fatherDir;
 	private String path;
 
-	public MyPackage(ArrayList<MyFile> arrayList, String path){
+	public Package(ArrayList<File> arrayList, String path){
 		this.path = path;
 		array = arrayList;
 		isMainDir = path.length() == 0;
@@ -30,7 +30,7 @@ public class MyPackage implements dirElements.Jsonoble {
 	public JsonObject toJson(){
 		JsonObject answer = new JsonObject();
 		JsonArray jsonArray = new JsonArray();
-		for(MyFile file: array){
+		for(File file: array){
 			jsonArray.add(file.toJson());
 		}
 		answer.put("array",jsonArray);
