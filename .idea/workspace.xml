@@ -1,28 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9676edba-42b7-44ee-9ff9-b6cd5ebe9f57" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/PathApi.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/TestSupport.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerCopy.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerDelete.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerMove.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerOpen.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/routerHandlers/RouteUpload.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/testDir/2/6/3.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/testDir/3/7/4.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/testDir/4/8/5.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainServ.java" afterPath="$PROJECT_DIR$/src/main/java/MainServ.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyTestSupport.java" afterPath="$PROJECT_DIR$/src/main/java/MyTestSupport.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dirElements/MyFile.java" afterPath="$PROJECT_DIR$/src/main/java/dirElements/File.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dirElements/MyPackage.java" afterPath="$PROJECT_DIR$/src/main/java/dirElements/Package.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/newServer/RouteHandler.java" afterPath="$PROJECT_DIR$/src/main/java/RouteHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/newServer/TestVertexRouter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/systemManager/NewSystemManager.java" afterPath="$PROJECT_DIR$/src/main/java/systemManager/NewSystemManager.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyVertexTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestVertexRouterTest.java" afterPath="$PROJECT_DIR$/src/test/java/TestVertexRouterTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainServ.class" afterPath="$PROJECT_DIR$/target/classes/MainServ.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyTestSupport.class" afterPath="$PROJECT_DIR$/target/classes/MyTestSupport.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dirElements/MyFile.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dirElements/MyPackage.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/newServer/Listener.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/newServer/TestVertexRouter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/oldServer/MyVertex.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/oldServer/RequestHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/systemManager/NewSystemManager.class" afterPath="$PROJECT_DIR$/target/classes/systemManager/NewSystemManager.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MyVertexTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestVertexRouterTest.class" afterPath="$PROJECT_DIR$/target/test-classes/TestVertexRouterTest.class" />
+      <change beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
+      <change beforePath="$PROJECT_DIR$/client/script.js" afterPath="$PROJECT_DIR$/client/script.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Jsonoble.java" afterPath="$PROJECT_DIR$/src/main/java/dirElements/Jsonoble.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainServ.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyTestSupport.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RouteHandler.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestVertexRouter.java" afterPath="$PROJECT_DIR$/src/main/java/VertexRouter.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dirElements/File.java" afterPath="$PROJECT_DIR$/src/main/java/dirElements/File.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dirElements/Package.java" afterPath="$PROJECT_DIR$/src/main/java/dirElements/Package.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dirElements/TextFile.java" afterPath="$PROJECT_DIR$/src/main/java/dirElements/TextFile.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/responses/MyResponse.java" afterPath="$PROJECT_DIR$/src/main/java/responses/Responder.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/systemManager/InterfaceSystemManager.java" afterPath="$PROJECT_DIR$/src/main/java/systemManager/InterfaceSystemManager.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/systemManager/NewSystemManager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/systemManager/SystemManager.java" afterPath="$PROJECT_DIR$/src/main/java/systemManager/SystemManager.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/NewSystemManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/SystemManagerTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestVertexRouterTest.java" afterPath="$PROJECT_DIR$/src/test/java/VertexRouterTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainServ.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyTestSupport.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RouteHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestVertexRouter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dirElements/Package.class" afterPath="$PROJECT_DIR$/target/classes/dirElements/Package.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/responses/MyResponse.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/systemManager/InterfaceSystemManager.class" afterPath="$PROJECT_DIR$/target/classes/systemManager/InterfaceSystemManager.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/systemManager/NewSystemManager.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/systemManager/SystemManager.class" afterPath="$PROJECT_DIR$/target/classes/systemManager/SystemManager.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/NewSystemManagerTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestVertexRouterTest.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,46 +57,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RouteHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RouteHandler.java">
+      <file leaf-file-name="VertexRouter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/VertexRouter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="250">
+              <caret line="25" column="45" lean-forward="false" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainServ.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MainServ.java">
+      <file leaf-file-name="RouteUpload.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/routerHandlers/RouteUpload.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestVertexRouter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TestVertexRouter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+              <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyTestSupport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MyTestSupport.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PathApi.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PathApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,8 +103,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -106,53 +124,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ServAndRouter.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/GetPackage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ErrorResponse.java" />
-        <option value="$PROJECT_DIR$/client/oldOrTest.js" />
-        <option value="$PROJECT_DIR$/src/main/java/responses/ErrorResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SystemManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NewSystemManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bilders/FileBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bilders/Builder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dirElements/Jsonoble.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MyVertex.java" />
-        <option value="$PROJECT_DIR$/src/main/java/responses/GoodResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/responses/Response.java" />
-        <option value="$PROJECT_DIR$/src/main/java/responses/ResponseBilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dirElements/MyFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/responses/ResponsePackage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/systemManager/SystemManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/responses/ResponseTextFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RequestHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oldServer/MyVertex.java" />
-        <option value="$PROJECT_DIR$/src/main/java/newServer/GetFileSystemListner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dirElements/TextFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oldServer/RequestHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/responses/BadRespanse.java" />
         <option value="$PROJECT_DIR$/src/main/java/responses/BadResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/responses/MyResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/systemManager/InterfaceSystemManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/miniTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TestSupport.java" />
         <option value="$PROJECT_DIR$/src/main/java/dirElements/MyPackage.java" />
         <option value="$PROJECT_DIR$/src/main/java/newServer/GetFileSystemListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/systemManager/NewSystemManagerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/systemManager/NewSystemManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/NewSystemManagerTest.java" />
-        <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/client/style.css" />
-        <option value="$PROJECT_DIR$/client/script.js" />
         <option value="$PROJECT_DIR$/src/main/java/newServer/Listener.java" />
         <option value="$PROJECT_DIR$/src/main/java/newServer/RouteHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/MyVertexTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/newServer/TestVertexRouter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/systemManager/NewSystemManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyTestSupport.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainServ.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestVertexRouterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestVertexRouter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestVertexRouterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/RouteHandler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/VertexRouterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TestSupport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Jsonoble.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dirElements/File.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dirElements/Jsonoble.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dirElements/TextFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RouteHandlerGetter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerGetter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routerHandlers/RouterHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routerHandlers/RouterHandlerDownload.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerDownload.java" />
+        <option value="$PROJECT_DIR$/src/main/java/responses/Responder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routerHandlers/RouteDownload.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PathApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerRename.java" />
+        <option value="$PROJECT_DIR$/src/main/java/systemManager/InterfaceSystemManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SystemManagerTest.java" />
+        <option value="$PROJECT_DIR$/client/js/modal.js" />
+        <option value="$PROJECT_DIR$/client/js/script.js" />
+        <option value="$PROJECT_DIR$/client/css/modal.css" />
+        <option value="$PROJECT_DIR$/client/modal.js" />
+        <option value="$PROJECT_DIR$/src/main/java/systemManager/SystemManager.java" />
+        <option value="$PROJECT_DIR$/client/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/dirElements/Package.java" />
+        <option value="$PROJECT_DIR$/client/script.js" />
+        <option value="$PROJECT_DIR$/src/main/java/VertexRouter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerCopy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerDelete.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerMove.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerOpen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routerHandlers/RouteUpload.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
@@ -178,7 +200,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -214,30 +237,6 @@
               <item name="dsr" type="b2602c69:ProjectViewProjectNode" />
               <item name="dsr" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dirElements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dsr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="responses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dsr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="systemManager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dsr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -251,8 +250,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,23 +259,33 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="systemManager" />
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="responses" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="routerHandlers" />
+      <recent name="dirElements" />
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\victor\ideaTest\WORK\dsr\dsr\client" />
+      <recent name="D:\victor\ideaTest\WORK\dsr\dsr\client\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\victor\ideaTest\WORK\dsr\dsr\testDir\4\8" />
+      <recent name="D:\victor\ideaTest\WORK\dsr\dsr\testDir\3\7" />
+      <recent name="D:\victor\ideaTest\WORK\dsr\dsr\testDir\2\6" />
+      <recent name="D:\victor\ideaTest\WORK\dsr\dsr\client" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="responses" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -292,7 +300,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainServ">
+  <component name="RunManager" selected="JUnit.All in vertxproj">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -300,9 +308,9 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="MainServ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="MainServ" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -328,15 +336,15 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="NewSystemManagerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in vertxproj" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="vertxproj" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NewSystemManagerTest" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -348,14 +356,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="NewSystemManagerTest.readBadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SystemManagerTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="vertxproj" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NewSystemManagerTest" />
-      <option name="METHOD_NAME" value="readBadFile" />
+      <option name="MAIN_CLASS_NAME" value="SystemManagerTest" />
+      <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -368,14 +376,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="NewSystemManagerTest.readFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SystemManagerTest.goodCopy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="vertxproj" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NewSystemManagerTest" />
-      <option name="METHOD_NAME" value="readFile" />
+      <option name="MAIN_CLASS_NAME" value="SystemManagerTest" />
+      <option name="METHOD_NAME" value="goodCopy" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -388,14 +396,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="NewSystemManagerTest.readPackage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SystemManagerTest.goodMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="vertxproj" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NewSystemManagerTest" />
-      <option name="METHOD_NAME" value="readPackage" />
+      <option name="MAIN_CLASS_NAME" value="SystemManagerTest" />
+      <option name="METHOD_NAME" value="goodMove" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -469,19 +477,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.NewSystemManagerTest.readFile" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.NewSystemManagerTest.readBadFile" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.NewSystemManagerTest (1)" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.NewSystemManagerTest.readPackage" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MainServ" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in vertxproj" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SystemManagerTest.goodCopy" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SystemManagerTest.goodMove" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SystemManagerTest.delete" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MainServ" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.NewSystemManagerTest (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.NewSystemManagerTest.readPackage" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.NewSystemManagerTest.readBadFile" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.NewSystemManagerTest.readFile" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in vertxproj" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SystemManagerTest.delete" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SystemManagerTest.goodMove" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SystemManagerTest.goodCopy" />
       </list>
     </recent_temporary>
   </component>
@@ -489,7 +497,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="StructureViewFactory">
-    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES,SHOW_INTERFACES" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -520,40 +528,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NewSystemManagerTest_(1) - 2018.07.24 at 02h 27m 57s.xml">
-      <configuration name="NewSystemManagerTest (1)" configurationId="JUnit" />
+    <history-entry file="All_in_vertxproj - 2018.07.31 at 09h 01m 12s.xml">
+      <configuration name="All in vertxproj" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewSystemManagerTest_(1) - 2018.07.24 at 02h 28m 43s.xml">
-      <configuration name="NewSystemManagerTest (1)" configurationId="JUnit" />
+    <history-entry file="All_in_vertxproj - 2018.07.31 at 09h 02m 46s.xml">
+      <configuration name="All in vertxproj" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewSystemManagerTest_(1) - 2018.07.24 at 02h 29m 03s.xml">
-      <configuration name="NewSystemManagerTest (1)" configurationId="JUnit" />
+    <history-entry file="All_in_vertxproj - 2018.07.31 at 09h 03m 55s.xml">
+      <configuration name="All in vertxproj" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewSystemManagerTest_(1) - 2018.07.25 at 19h 25m 05s.xml">
-      <configuration name="NewSystemManagerTest (1)" configurationId="JUnit" />
+    <history-entry file="All_in_vertxproj - 2018.07.31 at 09h 04m 29s.xml">
+      <configuration name="All in vertxproj" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewSystemManagerTest_readBadFile - 2018.07.24 at 02h 19m 18s.xml">
-      <configuration name="NewSystemManagerTest.readBadFile" configurationId="JUnit" />
+    <history-entry file="All_in_vertxproj - 2018.07.31 at 12h 07m 55s.xml">
+      <configuration name="All in vertxproj" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewSystemManagerTest_readFile - 2018.07.24 at 02h 17m 11s.xml">
-      <configuration name="NewSystemManagerTest.readFile" configurationId="JUnit" />
+    <history-entry file="SystemManagerTest_goodMove - 2018.07.28 at 09h 02m 50s.xml">
+      <configuration name="SystemManagerTest.goodMove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewSystemManagerTest_readPackage - 2018.07.24 at 02h 26m 51s.xml">
-      <configuration name="NewSystemManagerTest.readPackage" configurationId="JUnit" />
+    <history-entry file="SystemManagerTest_goodMove - 2018.07.28 at 09h 03m 47s.xml">
+      <configuration name="SystemManagerTest.goodMove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewSystemManagerTest_readPackage - 2018.07.24 at 02h 26m 55s.xml">
-      <configuration name="NewSystemManagerTest.readPackage" configurationId="JUnit" />
+    <history-entry file="SystemManagerTest_goodMove - 2018.07.28 at 09h 04m 54s.xml">
+      <configuration name="SystemManagerTest.goodMove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewSystemManagerTest_readPackage - 2018.07.24 at 02h 27m 20s.xml">
-      <configuration name="NewSystemManagerTest.readPackage" configurationId="JUnit" />
+    <history-entry file="VertexRouterTest_access - 2018.07.27 at 14h 21m 18s.xml">
+      <configuration name="VertexRouterTest.access" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewSystemManagerTest_readPackage - 2018.07.24 at 02h 27m 43s.xml">
-      <configuration name="NewSystemManagerTest.readPackage" configurationId="JUnit" />
+    <history-entry file="VertexRouterTest_access - 2018.07.27 at 14h 24m 57s.xml">
+      <configuration name="VertexRouterTest.access" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -568,19 +575,19 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2077381" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36105034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -593,35 +600,42 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/RouteHandler.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/NewSystemManagerTest.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="129" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="133" />
+      <option name="time" value="157" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="set" language="JAVA" />
       </configuration>
       <configuration name="Application">
-        <watch expression="path.charAt(path.length()-1 " language="JAVA" />
-        <watch expression="path" language="JAVA" />
-        <watch expression="mainPath" language="JAVA" />
+        <watch expression="request.delegate.params" language="JAVA" />
+        <watch expression="request.method()" language="JAVA" />
+        <watch expression="request.params()" language="JAVA" />
+        <watch expression="((HttpServerRequestImpl)((HttpServerRequestWrapper)((RoutingContextImpl)res).request).delegate).params" custom="io.vertx.core.http.impl.HttpServerRequestImpl,io.vertx.ext.web.impl.RoutingContextImpl,io.vertx.ext.web.impl.HttpServerRequestWrapper" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>request.params()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.method()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.delegate.params</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>set</expression-string>
         <language-id>JAVA</language-id>
@@ -655,123 +669,12 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/Vertx.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="67" column="15" lean-forward="false" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/spi/FutureFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/ServiceHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/Handler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/Future.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/File.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/AsyncResult.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/http/HttpServerResponse.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="88" column="9" lean-forward="false" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bilders/Builder.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/http/HttpServer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="56" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/responses/ErrorResponse.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/responses/ResponseBuilder.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/json/Json.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="62" column="30" lean-forward="false" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.5/jackson-databind-2.9.5.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="1131" column="17" lean-forward="false" selection-start-line="1131" selection-start-column="17" selection-end-line="1131" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/json/JsonObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="51" column="18" lean-forward="false" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-unit/3.0.0/vertx-unit-3.0.0.jar!/io/vertx/ext/unit/impl/TestContextImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="348" column="0" lean-forward="false" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="234" column="18" lean-forward="false" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/json/JsonArray.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/responses/ResponseTextFile.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/responses/ResponsePackage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/responses/BadResponse.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/impl/FutureImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Jsonoble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,13 +686,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oldServer/MyVertex.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/responses/MyResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/http/impl/Http1xClientConnection.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -826,41 +722,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dirElements/TextFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/miniTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dirElements/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dirElements/Package.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/AbstractVerticle.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="48" column="3" lean-forward="false" selection-start-line="48" selection-start-column="3" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/systemManager/SystemManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -871,29 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/systemManager/NewSystemManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#628#629#0" expanded="false" />
-            <element signature="e#650#651#0" expanded="false" />
-            <element signature="e#682#683#0" expanded="false" />
-            <element signature="e#704#705#0" expanded="false" />
-            <element signature="e#749#750#0" expanded="false" />
-            <element signature="e#780#781#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -901,61 +744,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/script.js">
+    <entry file="file://$PROJECT_DIR$/src/test/java/MyVertexTest.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/URI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="72" lean-forward="false" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
+        <state relative-caret-position="185">
+          <caret line="1084" column="13" lean-forward="false" selection-start-line="1084" selection-start-column="13" selection-end-line="1084" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/NewSystemManagerTest.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="30" lean-forward="false" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="193">
+          <caret line="139" column="19" lean-forward="false" selection-start-line="139" selection-start-column="19" selection-end-line="139" selection-end-column="19" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/systemManager/SystemManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="41" column="53" lean-forward="false" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.5.2/vertx-core-3.5.2.jar!/io/vertx/core/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dirElements/Jsonoble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dirElements/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dirElements/TextFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/oldOrTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/responses/Responder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerRename.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/systemManager/InterfaceSystemManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="238">
+          <caret line="17" column="98" lean-forward="false" selection-start-line="17" selection-start-column="98" selection-end-line="17" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SystemManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="116" column="42" lean-forward="false" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/VertexRouterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-953">
+          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testDir/2.txt" />
+    <entry file="file://$PROJECT_DIR$/client/css/modal.css" />
+    <entry file="file://$PROJECT_DIR$/client/modal.js" />
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MyVertexTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestVertexRouterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyTestSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainServ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RouteHandler.java">
+    <entry file="file://$PROJECT_DIR$/testDir/2/6/3.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -963,10 +871,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestVertexRouter.java">
+    <entry file="file://$PROJECT_DIR$/testDir/3/7/4.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testDir/4/8/5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#5212#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/systemManager/SystemManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dirElements/Package.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/VertexRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="25" column="45" lean-forward="false" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerOpen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routerHandlers/RouteHandlerCopy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="31" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routerHandlers/RouteUpload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PathApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
           <folding />
         </state>
       </provider>

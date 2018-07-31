@@ -2,7 +2,7 @@ package dirElements;
 
 import io.vertx.core.json.JsonObject;
 
-public class TextFile implements dirElements.Jsonoble {
+public class TextFile implements Jsonoble {
 
 	private String text;
 

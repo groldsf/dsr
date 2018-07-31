@@ -1,5 +1,5 @@
 var HOST = "http://localhost:8080/api/fs/"
-
+var dir;
 function getXhr(){
 	var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 
@@ -9,31 +9,9 @@ function getXhr(){
 }
 
 window.onload = function() {
-   document.getElementById("1re").onclick = authorization;
-   document.getElementById("2re").onclick = function(){openPackage(document.getElementById("addPath").value);};
-   document.getElementById("3re").onclick = function(){openFile(document.getElementById("addPath").value);};
+   openPackage("");
 }
 
-function authorization(){
-	document.getElementById("answer").innerHTML="log";
-
-	var xhr = getXhr();
-
-	var event = {
-		type : "auto",
-		login: "login",
-		password : "password"
-	};
-
-	var str = JSON.stringify(event);
-
-
-	xhr.open("GET",HOST+"?"+str,true);
-	xhr.addEventListener("load", function() {
-		document.getElementById("answer").innerHTML=xhr.responseText;
-	});
-	xhr.send();
-}
 
 function openPackage(uri){
 	document.getElementById("answer").innerHTML="openPackage...";
@@ -46,6 +24,7 @@ function openPackage(uri){
 
 	xhr.open("GET", HOST + uri, true);
 	xhr.addEventListener("load", function() {
+		dir = uri;
 	    //document.getElementById("answer").innerHTML = xhr.responseText;
         //console.log(xhr.responseText);
 		document.getElementById("answer").innerHTML = "";
@@ -83,12 +62,58 @@ function openFile(uri){
 	xhr.send();
 }
 
+function deleteFile(uri){
+	document.getElementById("answer").innerHTML="deleteFile...";
+    var xhr = getXhr();
+    document.getElementById("textAddPath").innerHTML = uri;
+
+    xhr.open("DELETE", HOST + uri, true);
+    xhr.addEventListener("load", function() {
+        document.getElementById("answer").innerHTML = xhr.status;
+		openPackage(dir);
+    });
+    xhr.send();
+}
+
+function moveFile(uri, path){
+	document.getElementById("answer").innerHTML="moveFile...";
+    var xhr = getXhr();
+    document.getElementById("textAddPath").innerHTML = uri;
+    var body = 'newName=' + encodeURIComponent(path);
+
+    xhr.open("POST", HOST + "move/" + uri + "?" + body, true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.addEventListener("load", function() {
+        document.getElementById("answer").innerHTML = xhr.responseText;
+		openPackage(dir);
+    });
+    xhr.send();
+}
+
+function copyFile(uri, path){
+	document.getElementById("answer").innerHTML="copyFile...";
+    var xhr = getXhr();
+    document.getElementById("textAddPath").innerHTML = uri;
+    var body = 'newName=' + encodeURIComponent(path);
+
+    xhr.open("POST", HOST + "copy/" + uri + "?" + body, true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.addEventListener("load", function() {
+        document.getElementById("answer").innerHTML = xhr.responseText;
+		openPackage(dir);
+    });
+    xhr.send();
+}
+
 function createPackage(answer){
-    //console.log(answer);
-    if(answer.isMainDir){
-    	//инвиз
+	var isMainDir = new Boolean(answer.isMainDir);
+
+    if(isMainDir == true){
+    	document.getElementById("back").style.display = "none";
+
     }else{
-        //uninviz
+
+        document.getElementById("back").style.display = "inline-block";
         document.getElementById("back").onclick = function(){
             openPackage(answer.fatherDir);
         }
@@ -101,16 +126,56 @@ function createPackage(answer){
 
 function createFileElem(obj){
     var newDiv = document.createElement('div');
-        newDiv.className = obj.type;
+    newDiv.className = obj.type;
 
-        newDiv.innerHTML = "<img class = \"ico\" src=\"" + "image/" + obj.type + ".png" + "\" alt=\"package\">"
-        newDiv.innerHTML += "<div class = 'name'>" + obj.name + "</div>";
+    newDiv.innerHTML = "<img class = \"ico\" src=\"" + "image/" + obj.type + ".png" + "\" alt=\"package\">"
+    newDiv.innerHTML += "<div class = 'name'>" + obj.name + "</div>";
 
-        //
-        if(obj.type == "package")
-            newDiv.addEventListener("dblclick", function(){openPackage(obj.fullDirectory);});
-        else if(obj.type == "file")
-            newDiv.addEventListener("dblclick",function(){openFile(obj.fullDirectory)});
 
-        document.getElementById("manager").appendChild(newDiv);
+    var copy = document.createElement('button');
+    copy.className = "copy";
+    copy.innerHTML = "copy";
+    copy.onclick = function(){
+        var ans = prompt('Введите новый путь/имя ' + obj.name);
+        if (ans) {
+            copyFile(obj.fullDirectory,ans);
+            console.log("copy");
+        }
+    };
+
+    var move = document.createElement('button');
+    move.className = "move";
+    move.innerHTML = "move";
+	move.onclick = function(){
+        var ans = prompt('Введите новый путь/имя ' + obj.name);
+        if (ans) {
+            moveFile(obj.fullDirectory,ans);
+			console.log("move");
+        }
+	};
+
+    var del = document.createElement('button');
+    del.className = "delete";
+    del.innerHTML = "delete";
+	del.onclick = function(){
+		var ans = confirm('Вы действительно хотите удалить ' + obj.name +'?');
+		if (ans) {
+			deleteFile(obj.fullDirectory);
+			console.log("delete");
+		};
+
+	};
+
+	newDiv.appendChild(copy);
+	newDiv.appendChild(move);
+    newDiv.appendChild(del);
+
+    //
+    if(obj.type == "package")
+        newDiv.addEventListener("dblclick", function(){openPackage(obj.fullDirectory);});
+    else if(obj.type == "file")
+        newDiv.addEventListener("dblclick",function(){openFile(obj.fullDirectory)});
+
+    document.getElementById("manager").appendChild(newDiv);
+
 }
