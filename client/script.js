@@ -131,6 +131,18 @@ function createFileElem(obj){
     newDiv.innerHTML = "<img class = \"ico\" src=\"" + "image/" + obj.type + ".png" + "\" alt=\"package\">"
     newDiv.innerHTML += "<div class = 'name'>" + obj.name + "</div>";
 
+    var rightPanel = document.createElement('div');
+    rightPanel.className = "rightEl";
+
+    if(obj.type == "file")
+        rightPanel.innerHTML += "<div class = 'size'>Size: " + obj.size + "</div>";
+    var date = new Date(obj.creationTime)
+    rightPanel.innerHTML += "<div class = 'creationTime'>creation: " + date.getDate() + "." + date.getMonth() + "." + date.getFullYear() + "</div>";
+    date = new Date(obj.lastModifiedTime);
+    rightPanel.innerHTML += "<div class = 'lastModifiedTime'>last modified: " + date.getDate() + "." + date.getMonth() + "." + date.getFullYear() + "</div>";
+    date = new Date(obj.lastAccessTime)
+    rightPanel.innerHTML += "<div class = 'lastAccessTime'>last access: " + date.getDate() + "." + date.getMonth() + "." + date.getFullYear() + "</div>";
+
 
     var copy = document.createElement('button');
     copy.className = "copy";
@@ -166,9 +178,10 @@ function createFileElem(obj){
 
 	};
 
-	newDiv.appendChild(copy);
-	newDiv.appendChild(move);
-    newDiv.appendChild(del);
+	rightPanel.appendChild(copy);
+	rightPanel.appendChild(move);
+    rightPanel.appendChild(del);
+    newDiv.appendChild(rightPanel);
 
     //
     if(obj.type == "package")
